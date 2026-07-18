@@ -14,27 +14,31 @@ projectsJSON.filter(p => p.downloaded).map( project => {
         title: project.title,
         genre: getGenre(project.genre),
         mainItemDir: project["main-item-dir"],
-        mainItemIsVideo: project["main-item-is-video"],
+        mainItemIsVideo: Boolean(project["main-item-is-video"]),
 
         baseDir: "projects/" + project.genre + "/" + 
             (project["sub-folder (optional)"] ? project["sub-folder (optional)"] + "/" : "")
     });
 
-    if (project.date) {
-        allProjectsList.find(p => p.slug == project.slug).date = project.date.toString()
-    }
+    const prjtObject = allProjectsList.find(p => p.slug == project.slug) 
 
-    if (project.description) {
-        allProjectsList.find(p => p.slug == project.slug).description = project.description
-    }
+    if (prjtObject && project) {
+        if (project.date) {
+            prjtObject.date = project.date.toString()
+        }
 
-    if (project.credits) {
-        allProjectsList.find(p => p.slug == project.slug).credits = project.credits
-    }
+        if (project.description) {
+            prjtObject.description = project.description
+        }
 
-    if (project["extra-photos"]) {
-        const extras = project["extra-photos"]?.split(",")
-        allProjectsList.find(p => p.slug == project.slug).extraItemsDir = extras
+        if (project.credits) {
+            prjtObject.credits = project.credits
+        }
+
+        if (project["extra-photos"]) {
+            const extras = project["extra-photos"]?.split(",")
+            prjtObject.extraItemsDir = extras
+        }
     }
     
 });
@@ -77,5 +81,5 @@ export interface Project {
 }
 
 
-export const getProjectBySlug = (slug: string) =>
+export const getProjectBySlug = (slug: string): Project =>
   allProjectsList.find((a) => a.slug === slug);

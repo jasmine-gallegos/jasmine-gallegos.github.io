@@ -1,7 +1,6 @@
 import { AdvancedImage } from "@cloudinary/react"
 import "../App.css"
 import { cld } from "../content/image-cloud"
-import RoundCornersAction from "@cloudinary/url-gen/actions/roundCorners/RoundCornersAction"
 import { byRadius } from "@cloudinary/url-gen/actions/roundCorners"
 
 

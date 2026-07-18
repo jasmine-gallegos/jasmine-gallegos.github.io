@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import type { Project } from "../content/projects";
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { cld } from "../content/image-cloud";
-import { AspectRatio } from "@cloudinary/url-gen/qualifiers";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 
 interface ProjectProps {
@@ -10,7 +9,7 @@ interface ProjectProps {
     index?: number;
 }
 
-const ProjectCard = ({ project, index = 0 }: ProjectProps) => {
+const ProjectCard = ({ project }: ProjectProps) => {
 
     return (
         <>
