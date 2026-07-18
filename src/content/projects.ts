@@ -81,5 +81,10 @@ export interface Project {
 }
 
 
-export const getProjectBySlug = (slug: string): Project =>
-  allProjectsList.find((a) => a.slug === slug);
+export const getProjectBySlug = (slug: string): Project => 
+    {
+        const proj = allProjectsList.find((a) => a.slug === slug);
+        if (proj) {
+            return proj;
+        }
+    }

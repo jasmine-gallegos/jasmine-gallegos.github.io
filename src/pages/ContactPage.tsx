@@ -68,5 +68,10 @@ function copyEmail() {
 
   // change the button text temporarily
   document.getElementById("emailButton").textContent = "copied!";
-  setTimeout(() => { document.getElementById("emailButton").textContent = "email"; }, 800);
+  setTimeout(() => {
+    const button = document.getElementById("emailButton")
+    if (button) {
+      button.textContent = "email"; 
+    }
+  }, 800);
 }

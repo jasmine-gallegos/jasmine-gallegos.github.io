@@ -9,74 +9,74 @@ function ProjectInfoPage() {
     const { slug } = useParams<{ slug: string }>();
     const project = slug ? getProjectBySlug(slug) : undefined;
 
-
-
-    return (
-        <>
-            <section className="
-            w-full
-            h-full
-            ">
-                <div className="
-                flex
-                flex-col
-                m-10
+    if (project) {
+        return (
+            <>
+                <section className="
+                w-full
+                h-full
                 ">
+                    <div className="
+                    flex
+                    flex-col
+                    m-10
+                    ">
 
-                    <div className="mb-8">
-                        <h1 className="
-                        text-7xl
-                        ">{project.title}</h1>
-                        <p className="text-5xl">{project.date}</p>
+                        <div className="mb-8">
+                            <h1 className="
+                            text-7xl
+                            ">{project.title}</h1>
+                            <p className="text-5xl">{project.date}</p>
+                        </div>
+                        
+
+
+                        {project.genre === "photography" ? 
+                            <LooseItemsSection project={project}/>
+                        :
+                            <CentralItemSection project={project} />
+                        }
+
+
+                        {project.description ? 
+                            <div className="
+                            mt-8
+                            ">
+                                <hr  className="mb-4"/>
+
+                                <div className="flex items-center lg:flex-row flex-col ">
+                                    <h1 className="m-4">Description</h1>
+                                    <p>{project.description}</p>
+                                </div>
+                            </div>
+                        :
+                        <></>
+                        }
+
+                        {project.credits ? 
+                            <div className="
+                            mt-8
+                            ">
+                                <hr  className="mb-4"/>
+
+                                <div className="flex items-center lg:flex-row flex-col ">
+                                    <h1 className="m-4">Credits</h1>
+                                    <p>{project.credits}</p>
+                                </div>
+                            </div>
+                        :
+                        <></>
+                        }
+
+
+
+
                     </div>
-                    
-
-
-                    {project.genre === "photography" ? 
-                        <LooseItemsSection project={project}/>
-                    :
-                        <CentralItemSection project={project} />
-                    }
-
-
-                    {project.description ? 
-                        <div className="
-                        mt-8
-                        ">
-                            <hr  className="mb-4"/>
-
-                            <div className="flex items-center lg:flex-row flex-col ">
-                                <h1 className="m-4">Description</h1>
-                                <p>{project.description}</p>
-                            </div>
-                        </div>
-                    :
-                    <></>
-                    }
-
-                    {project.credits ? 
-                        <div className="
-                        mt-8
-                        ">
-                            <hr  className="mb-4"/>
-
-                            <div className="flex items-center lg:flex-row flex-col ">
-                                <h1 className="m-4">Credits</h1>
-                                <p>{project.credits}</p>
-                            </div>
-                        </div>
-                    :
-                    <></>
-                    }
-
-
-
-
-                </div>
-            </section>
-            
-        </>
-    );
+                </section>
+                
+            </>
+        );
+    }
 }
 
 export default ProjectInfoPage;
