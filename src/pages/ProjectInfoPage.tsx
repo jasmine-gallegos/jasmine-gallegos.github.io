@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { getProjectBySlug } from "../content/projects";
+import { getProjectBySlug, type Project } from "../content/projects";
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { cld } from "../content/image-cloud";
-import { fill } from "@cloudinary/url-gen/actions/resize";
+import allPhotographsList from "../content/photographs";
 
 function ProjectInfoPage() {
 
@@ -31,7 +31,7 @@ function ProjectInfoPage() {
                         
 
 
-                        {project.genre === "photography" ? 
+                        {project.genre === "photography" || project.genre === "graphic-design" ? 
                             <LooseItemsSection project={project}/>
                         :
                             <CentralItemSection project={project} />
@@ -82,21 +82,21 @@ function ProjectInfoPage() {
 export default ProjectInfoPage;
 
 
-const CentralItemSection = ({project}) => {
+const CentralItemSection = ({ project }: { project: Project }) => {
 
     return (
         <>
-            <div>
+            <div className="self-center flex">
                 {project.mainItemIsVideo ?                     
                     // video project
-                    <>
-                        <AdvancedVideo cldVid={cld.video(project.mainItemDir)} controls={true} autoPlay={true} className=""/>
-                    </>
+                    <div className="">
+                        <AdvancedVideo cldVid={cld.video(project.slug === "premiere-film-festival" ? "3dmg_Premiere_Film_Festival_Animation" : project.mainItemDir)} controls={true} autoPlay={true} className="h-190"/>
+                    </div>
                 : 
                     // image project
-                    <>
-                        <AdvancedImage cldImg={cld.image(project.mainItemDir).resize(fill().aspectRatio("1.8"))} className="" />
-                    </>
+                    <div className="">
+                        <AdvancedImage cldImg={cld.image(project.mainItemDir)} className="h-190" />
+                    </div>
                 }
             </div>
             
@@ -112,12 +112,13 @@ const CentralItemSection = ({project}) => {
                 ">
                     {project.extraItemsDir.flatMap( (a: string) => (
                         <>
-                            {a.includes(".mp4") ? 
+                            {(a.includes("Video")) ? 
                                 <>
+                                    <AdvancedVideo cldVid={cld.video(a)} controls={true} className="m-4"/>
                                 </> 
                             : 
                                 <>
-                                <AdvancedImage cldImg={cld.image(a)} className="m-4" />
+                                    <AdvancedImage cldImg={cld.image(a)} className="m-4" />
                                 </>
                             }
                             
@@ -132,15 +133,44 @@ const CentralItemSection = ({project}) => {
 }
 
 
-const LooseItemsSection = ({project}) => {
+const LooseItemsSection = ({ project }: { project: Project }) => {
 
-    return (
-        <>
-            {project.title}
-        </>
-    );
+    if (project.genre === "graphic-design") {
+        return (
+            <>
+                {project.extraItemsDir ? 
+                    <div className="flex flex-wrap justify-center">
+                        {project.extraItemsDir.flatMap( (a: string) => (
+                            <div className="
+                                w-160
+                                m-4
+                            ">
+                                <AdvancedImage cldImg={cld.image(a)} className="" />
+                            </div>
+                        ))}
+                    </div>
+                :
+                <></>
+                }
+            </>
+        );
+    } else {
+        //.filter((p) => p.category === project.subFolder)
+        return (
+            <div className="flex flex-wrap justify-center">
+                {allPhotographsList.filter((p) => p.category === project.subFolder).flatMap((pt) => (
+                    
+                    <div className="
+                                w-160
+                                m-4
+                            ">
+                        {/* <p>{pt.fileName}</p> */}
+                        <AdvancedImage cldImg={cld.image(pt.fileName)} className="" />
+                    </div>
+                ))} 
+            </div>
+        );
+    }
+
+    
 }
-
-// {project.extraItemsDir.flatMap( (e) => {
-//                 <img src={e} />
-//             })}

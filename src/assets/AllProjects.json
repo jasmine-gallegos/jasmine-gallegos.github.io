@@ -48,7 +48,7 @@
    "sub-folder (optional)": "Motion Poster",
    "main-item-dir": "2dmg_Motion_Poster_Main",
    "main-item-is-video": true,
-   "extra-photos": "2dmg_Motion_Poster_Main,2dmg_Motion_Poster_1,2dmg_Motion_Poster_3,2dmg_Motion_Poster_4,2dmg_Motion_Poster_5,2dmg_Motion_Poster_6",
+   "extra-photos": "2dmg_Motion_Poster_1,2dmg_Motion_Poster_3,2dmg_Motion_Poster_4,2dmg_Motion_Poster_5,2dmg_Motion_Poster_6",
    "credits": ""
  },
  {
@@ -61,7 +61,7 @@
    "sub-folder (optional)": "Logo in Motion",
    "main-item-dir": "2dmg_Logo_in_Motion_Main",
    "main-item-is-video": true,
-   "extra-photos": "2dmg_Logo_in_Motion_Main,2dmg_Logo_in_Motion_1,2dmg_Logo_in_Motion_2,2dmg_Logo_in_Motion_3,2dmg_Logo_in_Motion_4,2dmg_Logo_in_Motion_5,2dmg_Logo_in_Motion_6,2dmg_Logo_in_Motion_7",
+   "extra-photos": "2dmg_Logo_in_Motion_1,2dmg_Logo_in_Motion_2,2dmg_Logo_in_Motion_3,2dmg_Logo_in_Motion_4,2dmg_Logo_in_Motion_5,2dmg_Logo_in_Motion_6,2dmg_Logo_in_Motion_7",
    "credits": ""
  },
  {
@@ -98,9 +98,9 @@
    "description": "I was paired with two other students to create a poster for the Annual DePaul Premiere Film Festival. We decided on a theme reminiscent of the red carpet and the Grammy’s, settling on a red and gold color scheme and abstract shapes that could create interesting motion. By choosing a thinner type,with accents and placing the text in a composition that aligned with the visual elements, we were able to effectively communicate the information required while also creating an eye-catching advertisement.",
    "genre": "3d-motion-graphics",
    "sub-folder (optional)": "Premiere Film Festival",
-   "main-item-dir": "3dmg_Premiere_Film_Festival_Screen",
+   "main-item-dir": "3dmg_Premiere_Film_Festival_Screen_Video",
    "main-item-is-video": true,
-   "extra-photos": "3dmg_Premiere_Film_Festival_Banner,3dmg_Premiere_Film_Festival_Poster,3dmg_Premiere_Film_Festival_Main",
+   "extra-photos": "3dmg_Premiere_Film_Festival_Banner,3dmg_Premiere_Film_Festival_Poster,3dmg_Premiere_Film_Festival_Screen_Video",
    "credits": "Animation, Lighting, Typography Animation"
  },
  {

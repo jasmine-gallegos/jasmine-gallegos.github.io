@@ -67,7 +67,10 @@ function copyEmail() {
   navigator.clipboard.writeText("joykwok2006@gmail.com");
 
   // change the button text temporarily
-  document.getElementById("emailButton").textContent = "copied!";
+  const button = document.getElementById("emailButton")
+  if (button) {
+    button.textContent = "copied!";
+  }
   setTimeout(() => {
     const button = document.getElementById("emailButton")
     if (button) {

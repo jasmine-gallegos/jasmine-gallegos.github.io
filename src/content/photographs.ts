@@ -1,6 +1,6 @@
 import photographsJSON from "../assets/PhotographyProjects.json"
 
-interface Photograph {
+export interface Photograph {
     title: string;
     date?: string;
     description?: string;
@@ -9,6 +9,7 @@ interface Photograph {
 }
 
 const allPhotographsList: Photograph[] = [];
+export default allPhotographsList;
 
 photographsJSON.map( (p) => {
     allPhotographsList.push ({
@@ -16,6 +17,4 @@ photographsJSON.map( (p) => {
         category: p["Photography Category"],
         fileName: p["file-dir"]
     })
-
-
 })

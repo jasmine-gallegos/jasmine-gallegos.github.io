@@ -15,11 +15,11 @@ const ProjectCard = ({ project }: ProjectProps) => {
         <>
             <Link
                 to={`/${project.slug}`}
-                className="bg-red-400"
+                className="
+                "
             >
                 <div className="
-                w-[100%]    
-                bg-red-100
+                w-[100%] 
                 ">
                     {project.mainItemIsVideo ? 
                         <>
@@ -35,7 +35,6 @@ const ProjectCard = ({ project }: ProjectProps) => {
                         {/* <img src={project.baseDir + project.mainItemDir}></img>  */}
                         </>
                     }
-                    <p>{project.mainItemDir}</p>
 
                     <p className="ml-2">
                         {project.title}

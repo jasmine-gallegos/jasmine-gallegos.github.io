@@ -7,8 +7,6 @@ export default allProjectsList;
 
 projectsJSON.filter(p => p.downloaded).map( project => {
 
-    console.log(project)
-
     allProjectsList.push({
         slug: project.slug,
         title: project.title,
@@ -38,6 +36,10 @@ projectsJSON.filter(p => p.downloaded).map( project => {
         if (project["extra-photos"]) {
             const extras = project["extra-photos"]?.split(",")
             prjtObject.extraItemsDir = extras
+        }
+
+        if (project["sub-folder (optional)"]) {
+            prjtObject.subFolder = project["sub-folder (optional)"]
         }
     }
     
@@ -81,7 +83,7 @@ export interface Project {
 }
 
 
-export const getProjectBySlug = (slug: string): Project => 
+export const getProjectBySlug = (slug: string): Project | undefined => 
     {
         const proj = allProjectsList.find((a) => a.slug === slug);
         if (proj) {

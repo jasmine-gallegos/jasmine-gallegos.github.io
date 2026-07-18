@@ -1,238 +1,252 @@
 [
  {
    "Photography Category": "fine-art",
-   "file-dir": "Forced Perspective.jpg",
+   "file-dir": "ptg_fineart_Forced_Perspective",
    "Title": "Withered Love",
    "Date": "",
    "Description": "Won Best in Show and 1st Place at Washington State Fair Art Show"
  },
  {
    "Photography Category": "fine-art",
-   "file-dir": "Withered Love.jpg",
+   "file-dir": "ptg_fineart_Withered_Love",
    "Title": "Forced Perspective",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "fine-art",
-   "file-dir": "A Bubble_s Burst of Color/1.jpg,A Bubble_s Burst of Color/2.jpg,A Bubble_s Burst of Color/3.jpg",
+   "file-dir": "ptg_fineart_bubble_1",
+   "Title": "A Bubble's Burst of Color",
+   "Date": "",
+   "Description": ""
+ },
+ {
+   "Photography Category": "fine-art",
+   "file-dir": "ptg_fineart_bubble_2",
+   "Title": "A Bubble's Burst of Color",
+   "Date": "",
+   "Description": ""
+ },
+ {
+   "Photography Category": "fine-art",
+   "file-dir": "ptg_fineart_bubble_3",
    "Title": "A Bubble's Burst of Color",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "street",
-   "file-dir": "Lunar.jpg",
+   "file-dir": "ptg_street_Lunar",
    "Title": "Lunar",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "street",
-   "file-dir": "Chicago Henge.JPG",
+   "file-dir": "ptg_street_Chicago_Henge",
    "Title": "Chicago Henge",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "street",
-   "file-dir": "Carousel.jpg",
+   "file-dir": "ptg_street_Carousel",
    "Title": "Carousel",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "street",
-   "file-dir": "Bank.JPG",
+   "file-dir": "ptg_street_Bank",
    "Title": "Bank",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "street",
-   "file-dir": "AdamsWabash.jpg",
-   "Title": "AdamsWabash",
+   "file-dir": "ptg_street_AdamsWabash",
+   "Title": "Adams Wabash",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "vannah 1.jpg",
+   "file-dir": "ptg_portrait_vannah_1",
    "Title": "vannah 1",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "vannah 2.jpg",
+   "file-dir": "ptg_portrait_vannah_2",
    "Title": "vannah 2",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "mei 1.jpg",
+   "file-dir": "ptg_portrait_mei_1",
    "Title": "mei 1",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "mei 2.jpg",
+   "file-dir": "ptg_portrait_mei_2",
    "Title": "mei 2",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "jay 1.jpg",
+   "file-dir": "ptg_portrait_jay_1",
    "Title": "jay 1",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "jay 2.jpg",
+   "file-dir": "ptg_portrait_jay_2",
    "Title": "jay 2",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "charlotte 1.jpg",
+   "file-dir": "ptg_portrait_charlotte_1",
    "Title": "charlotte 1",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "portrait",
-   "file-dir": "charlotte 2.jpg",
+   "file-dir": "ptg_portrait_charlotte_2",
    "Title": "charlotte 2",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "Rae.jpg",
+   "file-dir": "ptg_campus_Rae",
    "Title": "Rae",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "OLclap.jpg",
+   "file-dir": "ptg_campus_OLclap",
    "Title": "OLclap",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "Handshake.jpg",
+   "file-dir": "ptg_campus_Handshake",
    "Title": "Handshake",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "Football.jpg",
+   "file-dir": "ptg_campus_Football",
    "Title": "Football",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "Craft.jpg",
+   "file-dir": "ptg_campus_Craft",
    "Title": "Craft",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "Cheer.jpg",
+   "file-dir": "ptg_campus_Cheer",
    "Title": "Cheer",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "campus-events",
-   "file-dir": "3girls.jpg",
+   "file-dir": "ptg_campus_3girls",
    "Title": "3girls",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "camp",
-   "file-dir": "Bubble.JPG",
+   "file-dir": "ptg_camp_Bubble",
    "Title": "Bubble",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "camp",
-   "file-dir": "DodgeBall.jpg",
+   "file-dir": "ptg_camp_DodgeBall",
    "Title": "DodgeBall",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "camp",
-   "file-dir": "Dominoes.jpg",
+   "file-dir": "ptg_camp_Dominoes",
    "Title": "Dominoes",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "camp",
-   "file-dir": "Splash.JPG",
+   "file-dir": "ptg_camp_Splash",
    "Title": "Splash",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "camp",
-   "file-dir": "Watergun.JPG",
+   "file-dir": "ptg_camp_Watergun",
    "Title": "Watergun",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "1Cafune.jpg",
+   "file-dir": "ptg_concert_1Cafune",
    "Title": "1Cafune",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "2LynGuest.jpg",
+   "file-dir": "ptg_concert_2LynGuest",
    "Title": "2LynGuest",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "3Lyn.jpg",
+   "file-dir": "ptg_concert_3Lyn",
    "Title": "3Lyn",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "4Hails.jpg",
+   "file-dir": "ptg_concert_4Hails",
    "Title": "4Hails",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "5LynBass.jpg",
+   "file-dir": "ptg_concert_5LynBass",
    "Title": "5LynBass",
    "Date": "",
    "Description": ""
  },
  {
    "Photography Category": "concert",
-   "file-dir": "6Wildwood.jpg",
+   "file-dir": "ptg_concert_6Wildwood",
    "Title": "6Wildwood",
    "Date": "",
    "Description": ""
