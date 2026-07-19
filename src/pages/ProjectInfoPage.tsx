@@ -93,7 +93,7 @@ const CentralItemSection = ({ project }: { project: Project }) => {
                     <div className="">
                         <AdvancedVideo cldVid={cld.video(project.slug === "premiere-film-festival" 
                             ? "3dmg_Premiere_Film_Festival_Animation" : project.mainItemDir)} 
-                            controls={true} autoPlay={true} 
+                            controls={true} autoPlay={true} playsInline={true} 
                             className="
                                 md:h-160
                             "/>
@@ -123,7 +123,7 @@ const CentralItemSection = ({ project }: { project: Project }) => {
                         <>
                             {(a.includes("Video")) ? 
                                 <>
-                                    <AdvancedVideo cldVid={cld.video(a)} controls={true} className="m-4"/>
+                                    <AdvancedVideo cldVid={cld.video(a)} controls={true} playsInline={true} className="m-4"/>
                                 </> 
                             : 
                                 <>

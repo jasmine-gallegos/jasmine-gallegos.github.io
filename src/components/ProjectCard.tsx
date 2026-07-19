@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: ProjectProps) => {
                 ">
                     {project.mainItemIsVideo ? 
                         <>
-                            <AdvancedVideo cldVid={cld.video(project.mainItemDir)} loop={true} autoPlay={true} muted={true} className=""/>
+                            <AdvancedVideo cldVid={cld.video(project.mainItemDir)} loop={true} autoPlay={true} muted={true} playsInline={true} className=""/>
                             
                             {/* <video width="1120" height="960" autoPlay muted loop src={project.baseDir + project.mainItemDir}>
                                 Your browser does not support the video tag.
