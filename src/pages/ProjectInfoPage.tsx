@@ -24,7 +24,8 @@ function ProjectInfoPage() {
 
                         <div className="mb-8">
                             <h1 className="
-                            text-7xl
+                            md:text-7xl
+                            text-5xl
                             ">{project.title}</h1>
                             <p className="text-5xl">{project.date}</p>
                         </div>
@@ -90,12 +91,20 @@ const CentralItemSection = ({ project }: { project: Project }) => {
                 {project.mainItemIsVideo ?                     
                     // video project
                     <div className="">
-                        <AdvancedVideo cldVid={cld.video(project.slug === "premiere-film-festival" ? "3dmg_Premiere_Film_Festival_Animation" : project.mainItemDir)} controls={true} autoPlay={true} className="h-190"/>
+                        <AdvancedVideo cldVid={cld.video(project.slug === "premiere-film-festival" 
+                            ? "3dmg_Premiere_Film_Festival_Animation" : project.mainItemDir)} 
+                            controls={true} autoPlay={true} 
+                            className="
+                                md:h-160
+                            "/>
                     </div>
                 : 
                     // image project
                     <div className="">
-                        <AdvancedImage cldImg={cld.image(project.mainItemDir)} className="h-190" />
+                        <AdvancedImage cldImg={cld.image(project.mainItemDir)} 
+                        className="
+                            md:h-160
+                        "/>
                     </div>
                 }
             </div>

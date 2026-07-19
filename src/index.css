@@ -9,7 +9,7 @@
 @layer components {
   .navbar-button {
     /* background-color: #cce3de; */
-    min-width: 25%;
+    min-width: 27%;
     max-width: 25%;
     min-height: 50%;
     font-size: large;
