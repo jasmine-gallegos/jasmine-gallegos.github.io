@@ -26,7 +26,7 @@ function HomePage() {
       w-full h-full 
       ">
 
-        <div className="flex mb-4">
+        <div className="flex flex-wrap mb-4">
           {categories.map((category) => 
             <button 
             key={category.index}
