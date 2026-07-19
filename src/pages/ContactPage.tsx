@@ -37,7 +37,6 @@ function ContactPage() {
         items-center
         w-full
         p-16
-        border-l
         ">
           {/* different button for email, bc it's not a link */}
           <button className="contact-button" onClick={copyEmail}>
