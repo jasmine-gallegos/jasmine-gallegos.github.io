@@ -75,7 +75,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
         items-center
         w-full
         p-16
-        border-l
         `,children:[(0,H.jsx)(`button`,{className:`contact-button`,onClick:sc,children:(0,H.jsx)(`h1`,{id:`emailButton`,children:`Email`})}),[{path:`https://www.instagram.com/soybeansu_/`,label:`Instagram`,index:0},{path:`http://www.linkedin.com/in/joyykwok`,label:`LinkedIn`,index:1}].map(e=>(0,H.jsx)(`button`,{className:`contact-button`,children:(0,H.jsx)(`a`,{href:e.path,target:`_`,children:(0,H.jsx)(`h1`,{children:e.label})})}))]})]})})}function sc(){navigator.clipboard.writeText(`joykwok2006@gmail.com`);let e=document.getElementById(`emailButton`);e&&(e.textContent=`copied!`),setTimeout(()=>{let e=document.getElementById(`emailButton`);e&&(e.textContent=`email`)},800)}function cc({selectedPage:e,onPageChange:t}){return(0,H.jsx)(H.Fragment,{children:(0,H.jsxs)(`div`,{className:`
             flex 
             flex-wrap
