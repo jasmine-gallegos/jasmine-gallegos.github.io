@@ -104,12 +104,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     flex-col
                     m-10
                     `,children:[(0,H.jsxs)(`div`,{className:`mb-8`,children:[(0,H.jsx)(`h1`,{className:`
-                            text-7xl
+                            md:text-7xl
+                            text-5xl
                             `,children:t.title}),(0,H.jsx)(`p`,{className:`text-5xl`,children:t.date})]}),t.genre===`photography`||t.genre===`graphic-design`?(0,H.jsx)(mc,{project:t}):(0,H.jsx)(pc,{project:t}),t.description?(0,H.jsxs)(`div`,{className:`
                             mt-8
                             `,children:[(0,H.jsx)(`hr`,{className:`mb-4`}),(0,H.jsxs)(`div`,{className:`flex items-center lg:flex-row flex-col `,children:[(0,H.jsx)(`h1`,{className:`m-4`,children:`Description`}),(0,H.jsx)(`p`,{children:t.description})]})]}):(0,H.jsx)(H.Fragment,{}),t.credits?(0,H.jsxs)(`div`,{className:`
                             mt-8
-                            `,children:[(0,H.jsx)(`hr`,{className:`mb-4`}),(0,H.jsxs)(`div`,{className:`flex items-center lg:flex-row flex-col `,children:[(0,H.jsx)(`h1`,{className:`m-4`,children:`Credits`}),(0,H.jsx)(`p`,{children:t.credits})]})]}):(0,H.jsx)(H.Fragment,{})]})})})}var pc=({project:e})=>(0,H.jsxs)(H.Fragment,{children:[(0,H.jsx)(`div`,{className:`self-center flex`,children:e.mainItemIsVideo?(0,H.jsx)(`div`,{className:``,children:(0,H.jsx)(io,{cldVid:Xs.video(e.slug===`premiere-film-festival`?`3dmg_Premiere_Film_Festival_Animation`:e.mainItemDir),controls:!0,autoPlay:!0,className:`h-190`})}):(0,H.jsx)(`div`,{className:``,children:(0,H.jsx)(no,{cldImg:Xs.image(e.mainItemDir),className:`h-190`})})}),e.extraItemsDir?(0,H.jsx)(`div`,{className:`
+                            `,children:[(0,H.jsx)(`hr`,{className:`mb-4`}),(0,H.jsxs)(`div`,{className:`flex items-center lg:flex-row flex-col `,children:[(0,H.jsx)(`h1`,{className:`m-4`,children:`Credits`}),(0,H.jsx)(`p`,{children:t.credits})]})]}):(0,H.jsx)(H.Fragment,{})]})})})}var pc=({project:e})=>(0,H.jsxs)(H.Fragment,{children:[(0,H.jsx)(`div`,{className:`self-center flex`,children:e.mainItemIsVideo?(0,H.jsx)(`div`,{className:``,children:(0,H.jsx)(io,{cldVid:Xs.video(e.slug===`premiere-film-festival`?`3dmg_Premiere_Film_Festival_Animation`:e.mainItemDir),controls:!0,autoPlay:!0,className:`
+                                md:h-160
+                            `})}):(0,H.jsx)(`div`,{className:``,children:(0,H.jsx)(no,{cldImg:Xs.image(e.mainItemDir),className:`
+                            md:h-160
+                        `})})}),e.extraItemsDir?(0,H.jsx)(`div`,{className:`
                 mt-8
                 h-70
                 
