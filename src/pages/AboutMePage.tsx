@@ -53,12 +53,13 @@ function AboutMePage() {
           </h1>
           
           <div className="flex justify-center">
-            <object
+            <img src="/Joy Kwok Resume.jpg" className="border-2"/>
+            {/* <object
               data="about-me/Joy Kwok Resume.pdf"
               type="application/pdf"
               width="80%"
               height="1000"
-            />
+            /> */}
           </div>
 
         </div>
