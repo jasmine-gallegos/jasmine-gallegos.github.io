@@ -48,7 +48,7 @@ function NavBar({ selectedPage, onPageChange }: NavBarProps) {
                 w-full
                 flex 
                 justify-around items-center
-                m-2
+                mt-2 mb-2
                 ">
 
                     {pages.map((page) => (

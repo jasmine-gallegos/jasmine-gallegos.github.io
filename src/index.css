@@ -25,9 +25,10 @@
     color: white;
   }
 
+
   .contact-button {
     border-width: 8px;
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 10px;
     width: 80%;
   }
@@ -36,6 +37,7 @@
     color: white;
     border-color: black;
   }
+
 
   .category-button {
     border-width: 2px;

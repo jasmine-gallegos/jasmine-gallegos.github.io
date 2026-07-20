@@ -36,7 +36,7 @@ function ContactPage() {
         flex flex-col
         items-center
         w-full
-        p-16
+        p-10
         ">
           {/* different button for email, bc it's not a link */}
           <button className="contact-button" onClick={copyEmail}>
