@@ -105,7 +105,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     `,children:[(0,H.jsxs)(`div`,{className:`mb-8`,children:[(0,H.jsx)(`h1`,{className:`
                             md:text-7xl
                             text-5xl
-                            `,children:t.title}),(0,H.jsx)(`p`,{className:`text-5xl`,children:t.date})]}),t.projectHasFocusItem?(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(pc,{project:t})}):(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(mc,{project:t})}),t.description?(0,H.jsxs)(`div`,{className:`
+                            `,children:t.title}),(0,H.jsx)(`p`,{className:`text-5xl`,children:t.date})]}),t.projectHasFocusItem?(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(pc,{project:t})}):(0,H.jsx)(mc,{project:t}),t.description?(0,H.jsxs)(`div`,{className:`
                             mt-8
                             `,children:[(0,H.jsx)(`hr`,{className:`mb-4`}),(0,H.jsxs)(`div`,{className:`flex items-center lg:flex-row flex-col `,children:[(0,H.jsx)(`h1`,{className:`m-4`,children:`Description`}),(0,H.jsx)(`p`,{children:t.description})]})]}):(0,H.jsx)(H.Fragment,{}),t.credits?(0,H.jsxs)(`div`,{className:`
                             mt-8
