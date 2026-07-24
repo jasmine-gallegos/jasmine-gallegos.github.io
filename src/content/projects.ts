@@ -10,10 +10,10 @@ projectsJSON.map( project => {
     allProjectsList.push({
         slug: project.slug,
         title: project.title,
-        genre: getGenre(project.genre),
+        category: getCategory(project.category),
         mainItemDir: project["main-item-dir"],
         mainItemIsVideo: Boolean(project["main-item-is-video"]),
-        projectHasFocusItem: false
+        projectHasFocusItem: project["project-has-focus-item"]
     });
 
     const prjtObject = allProjectsList.find(p => p.slug == project.slug) 
@@ -36,8 +36,8 @@ projectsJSON.map( project => {
             prjtObject.extraItemsDir = extras
         }
 
-        if (project["sub-folder (optional)"]) {
-            prjtObject.subFolder = project["sub-folder (optional)"]
+        if (project["sub-folder"]) {
+            prjtObject.subFolder = project["sub-folder"]
         }
     }
     
@@ -45,7 +45,7 @@ projectsJSON.map( project => {
 
 
 
-function getGenre(inputGenre: string): Genre {
+function getCategory(inputGenre: string): Category {
     switch (inputGenre) {
         case "2d-motion-graphics": return "2d-motion-graphics"
         case "3d-motion-graphics": return "3d-motion-graphics"
@@ -59,7 +59,7 @@ function getGenre(inputGenre: string): Genre {
 
 
 
-export type Genre = "all" | "2d-motion-graphics" | "3d-motion-graphics" | "graphic-design" | "animation" | "illustration" | "photography"
+export type Category = "all" | "2d-motion-graphics" | "3d-motion-graphics" | "graphic-design" | "animation" | "illustration" | "photography"
 
 export interface Project {
   slug: string;
@@ -67,7 +67,7 @@ export interface Project {
   date?: string; 
   description?: string;
 
-  genre: Genre;
+  category: Category;
   subFolder?: string;
 
   projectHasFocusItem: boolean;

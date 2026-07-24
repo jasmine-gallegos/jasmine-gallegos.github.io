@@ -32,10 +32,14 @@ function ProjectInfoPage() {
                         
 
 
-                        {project.genre === "photography" || project.genre === "graphic-design" ? 
+                        {!project.projectHasFocusItem ? 
+                        <>
                             <LooseItemsSection project={project}/>
+                        </>
                         :
+                        <>
                             <CentralItemSection project={project} />
+                        </>
                         }
 
 
@@ -143,8 +147,25 @@ const CentralItemSection = ({ project }: { project: Project }) => {
 
 
 const LooseItemsSection = ({ project }: { project: Project }) => {
+    
+    if (project.category === "photography") {
+        //.filter((p) => p.category === project.subFolder)
+        return (
+            <div className="flex flex-wrap justify-center">
 
-    if (project.genre === "graphic-design") {
+                {allPhotographsList.filter((p) => p.category === project.subFolder).flatMap((pt) => (
+                    
+                    <div className="
+                                w-160
+                                m-4
+                            ">
+                        {/* <p>{pt.fileName}</p> */}
+                        <AdvancedImage cldImg={cld.image(pt.fileName)} className="" />
+                    </div>
+                ))} 
+            </div>
+        );
+    } else {
         return (
             <>
                 {project.extraItemsDir ? 
@@ -162,22 +183,6 @@ const LooseItemsSection = ({ project }: { project: Project }) => {
                 <></>
                 }
             </>
-        );
-    } else {
-        //.filter((p) => p.category === project.subFolder)
-        return (
-            <div className="flex flex-wrap justify-center">
-                {allPhotographsList.filter((p) => p.category === project.subFolder).flatMap((pt) => (
-                    
-                    <div className="
-                                w-160
-                                m-4
-                            ">
-                        {/* <p>{pt.fileName}</p> */}
-                        <AdvancedImage cldImg={cld.image(pt.fileName)} className="" />
-                    </div>
-                ))} 
-            </div>
         );
     }
 
