@@ -90,24 +90,35 @@ const CentralItemSection = ({ project }: { project: Project }) => {
     return (
         <>
             <div className="self-center flex">
-                {project.mainItemIsVideo ?                     
-                    // video project
-                    <div className="">
-                        <AdvancedVideo cldVid={cld.video(project.slug === "premiere-film-festival" 
-                            ? "3dmg_Premiere_Film_Festival_Animation" : project.mainItemDir)} 
-                            controls={true} autoPlay={true} playsInline={true} 
-                            className="
-                                md:h-160
-                            "/>
-                    </div>
-                : 
-                    // image project
-                    <div className="">
-                        <AdvancedImage cldImg={cld.image(project.mainItemDir)} 
+
+                {project.slug === "premiere-film-festival" ?
+                    <div className="flex flex-col">
+                        <AdvancedImage cldImg={cld.image("3dmg_Premiere_Film_Festival_Poster")} 
                         className="
                             md:h-160
-                        "/>
+                        " />
                     </div>
+                :
+                    <>
+                        {project.mainItemIsVideo ?                     
+                            // video project
+                            <div className="">
+                                <AdvancedVideo cldVid={cld.video(project.mainItemDir)} 
+                                    controls={true} autoPlay={true} playsInline={true} 
+                                    className="
+                                        md:h-160
+                                    "/>
+                            </div>
+                        : 
+                            // image project
+                            <div className="">
+                                <AdvancedImage cldImg={cld.image(project.mainItemDir)} 
+                                className="
+                                    md:h-160
+                                "/>
+                            </div>
+                        }
+                    </>
                 }
             </div>
             
