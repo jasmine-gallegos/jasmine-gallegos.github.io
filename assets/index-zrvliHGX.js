@@ -121,7 +121,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 content-center 
 
                 overflow-scroll
-                `,children:e.extraItemsDir.flatMap(e=>(0,H.jsxs)(H.Fragment,{children:[e,e.includes(`Video`)?(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(io,{cldVid:Xs.video(e),controls:!0,playsInline:!0,className:`m-4`})}):(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(no,{cldImg:Xs.image(e),className:`m-4`})})]}))}):(0,H.jsx)(H.Fragment,{})]}),mc=({project:e})=>e.category===`photography`?(0,H.jsx)(`div`,{className:`flex flex-wrap justify-center`,children:dc.filter(t=>t.category===e.subFolder).flatMap(e=>(0,H.jsx)(`div`,{className:`
+                `,children:e.extraItemsDir.flatMap(e=>(0,H.jsx)(H.Fragment,{children:e.includes(`Video`)?(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(io,{cldVid:Xs.video(e),controls:!0,playsInline:!0,className:`m-4`})}):(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(no,{cldImg:Xs.image(e),className:`m-4`})})}))}):(0,H.jsx)(H.Fragment,{})]}),mc=({project:e})=>e.category===`photography`?(0,H.jsx)(`div`,{className:`flex flex-wrap justify-center`,children:dc.filter(t=>t.category===e.subFolder).flatMap(e=>(0,H.jsx)(`div`,{className:`
                                 w-160
                                 m-4
                             `,children:(0,H.jsx)(no,{cldImg:Xs.image(e.fileName),className:``})}))}):(0,H.jsx)(H.Fragment,{children:e.extraItemsDir?(0,H.jsx)(`div`,{className:`flex flex-wrap justify-center`,children:e.extraItemsDir.flatMap(e=>(0,H.jsx)(`div`,{className:`
