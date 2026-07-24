@@ -125,7 +125,6 @@ const CentralItemSection = ({ project }: { project: Project }) => {
                 ">
                     {project.extraItemsDir.flatMap( (a: string) => (
                         <>
-                            {a}
                             {(a.includes("Video")) ? 
                                 <>
                                     <AdvancedVideo cldVid={cld.video(a)} controls={true} playsInline={true} className="m-4"/>
