@@ -33,9 +33,7 @@ function ProjectInfoPage() {
 
 
                         {!project.projectHasFocusItem ? 
-                        <>
                             <LooseItemsSection project={project}/>
-                        </>
                         :
                         <>
                             <CentralItemSection project={project} />
