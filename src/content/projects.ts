@@ -5,7 +5,7 @@ export default allProjectsList;
 
 
 
-projectsJSON.filter(p => p.downloaded).map( project => {
+projectsJSON.map( project => {
 
     allProjectsList.push({
         slug: project.slug,
@@ -13,9 +13,7 @@ projectsJSON.filter(p => p.downloaded).map( project => {
         genre: getGenre(project.genre),
         mainItemDir: project["main-item-dir"],
         mainItemIsVideo: Boolean(project["main-item-is-video"]),
-
-        baseDir: "projects/" + project.genre + "/" + 
-            (project["sub-folder (optional)"] ? project["sub-folder (optional)"] + "/" : "")
+        projectHasFocusItem: false
     });
 
     const prjtObject = allProjectsList.find(p => p.slug == project.slug) 
@@ -69,10 +67,10 @@ export interface Project {
   date?: string; 
   description?: string;
 
-  baseDir: string;
-
   genre: Genre;
   subFolder?: string;
+
+  projectHasFocusItem: boolean;
   
   mainItemDir: string;
   mainItemIsVideo: boolean;
