@@ -362,5 +362,18 @@
    "project-has-focus-item": false,
    "extra-photos": "",
    "credits": ""
+ },
+ {
+   "slug": "iceland-photography",
+   "title": "Iceland Photography",
+   "date": null,
+   "description": "i took a trip to iceland",
+   "category": "photography",
+   "sub-folder": "iceland",
+   "main-item-dir": "ptg_Iceland_1Cat",
+   "main-item-is-video": false,
+   "project-has-focus-item": false,
+   "extra-photos": "",
+   "credits": ""
  }
 ]
