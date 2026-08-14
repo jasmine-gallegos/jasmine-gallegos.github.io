@@ -16,7 +16,7 @@ photographsJSON.map( (p) => {
         title: p.title,
         category: p.category,
         fileName: p["file-dir"],
-        date: p.date,
+        date: p.date.toString(),
         description: p.description
     })
 })
