@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import type { Project } from "../content/projects";
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { cld } from "../content/image-cloud";
-import { fill } from "@cloudinary/url-gen/actions/resize";
+import { auto, fill } from "@cloudinary/url-gen/actions/resize";
+import { focusOn } from "@cloudinary/url-gen/qualifiers/autoFocus";
+import { face } from "@cloudinary/url-gen/qualifiers/focusOn";
+import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+import { north } from "@cloudinary/url-gen/qualifiers/compass";
 
 interface ProjectProps {
     project: Project;
@@ -24,15 +28,14 @@ const ProjectCard = ({ project }: ProjectProps) => {
                     {project.mainItemIsVideo ? 
                         <>
                             <AdvancedVideo cldVid={cld.video(project.mainItemDir)} loop={true} autoPlay={true} muted={true} playsInline={true} className=""/>
-                            
-                            {/* <video width="1120" height="960" autoPlay muted loop src={project.baseDir + project.mainItemDir}>
-                                Your browser does not support the video tag.
-                            </video> */}
                         </>
                     : 
                         <>
-                        <AdvancedImage cldImg={cld.image(project.mainItemDir).resize(fill().aspectRatio("1.8"))} className="" />
-                        {/* <img src={project.baseDir + project.mainItemDir}></img>  */}
+                        {/* .resize(fill().aspectRatio("1.8")) */}
+                        <AdvancedImage cldImg={
+                            cld.image(project.mainItemDir)
+                            .resize(fill().aspectRatio("1.8").gravity(autoGravity()))
+                            } className="" />
                         </>
                     }
 

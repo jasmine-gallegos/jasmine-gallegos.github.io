@@ -1,5 +1,6 @@
 [
  {
+<<<<<<< Updated upstream
    "slug": "cat-fished",
    "title": "Cat Fished",
    "date": 2025,
@@ -375,5 +376,264 @@
    "project-has-focus-item": false,
    "extra-photos": "",
    "credits": ""
+=======
+   "category": "fine-art",
+   "file-dir": "ptg_fineart_Forced_Perspective",
+   "title": "Withered Love",
+   "date": "",
+   "description": "Won Best in Show and 1st Place at Washington State Fair Art Show"
+ },
+ {
+   "category": "fine-art",
+   "file-dir": "ptg_fineart_Withered_Love",
+   "title": "Forced Perspective",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "fine-art",
+   "file-dir": "ptg_fineart_bubble_1",
+   "title": "A Bubble's Burst of Color",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "fine-art",
+   "file-dir": "ptg_fineart_bubble_2",
+   "title": "A Bubble's Burst of Color",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "fine-art",
+   "file-dir": "ptg_fineart_bubble_3",
+   "title": "A Bubble's Burst of Color",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "street",
+   "file-dir": "ptg_street_Lunar",
+   "title": "Lunar",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "street",
+   "file-dir": "ptg_street_Chicago_Henge",
+   "title": "Chicago Henge",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "street",
+   "file-dir": "ptg_street_Carousel",
+   "title": "Carousel",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "street",
+   "file-dir": "ptg_street_Bank",
+   "title": "Bank",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "street",
+   "file-dir": "ptg_street_AdamsWabash",
+   "title": "Adams Wabash",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_vannah_1",
+   "title": "vannah 1",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_vannah_2",
+   "title": "vannah 2",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_mei_1",
+   "title": "mei 1",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_mei_2",
+   "title": "mei 2",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_jay_1",
+   "title": "jay 1",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_jay_2",
+   "title": "jay 2",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_charlotte_1",
+   "title": "charlotte 1",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "portrait",
+   "file-dir": "ptg_portrait_charlotte_2",
+   "title": "charlotte 2",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_Rae",
+   "title": "Rae",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_OLclap",
+   "title": "OLclap",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_Handshake",
+   "title": "Handshake",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_Football",
+   "title": "Football",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_Craft",
+   "title": "Craft",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_Cheer",
+   "title": "Cheer",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "campus-events",
+   "file-dir": "ptg_campus_3girls",
+   "title": "3girls",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "camp",
+   "file-dir": "ptg_camp_Bubble",
+   "title": "Bubble",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "camp",
+   "file-dir": "ptg_camp_DodgeBall",
+   "title": "DodgeBall",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "camp",
+   "file-dir": "ptg_camp_Dominoes",
+   "title": "Dominoes",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "camp",
+   "file-dir": "ptg_camp_Splash",
+   "title": "Splash",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "camp",
+   "file-dir": "ptg_camp_Watergun",
+   "title": "Watergun",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_1Cafune",
+   "title": "1Cafune",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_2LynGuest",
+   "title": "2LynGuest",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_3Lyn",
+   "title": "3Lyn",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_4Hails",
+   "title": "4Hails",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_5LynBass",
+   "title": "5LynBass",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "concert",
+   "file-dir": "ptg_concert_6Wildwood",
+   "title": "6Wildwood",
+   "date": "",
+   "description": ""
+ },
+ {
+   "category": "Iceland",
+   "file-dir": "ptg_Iceland_1Cat",
+   "title": "1Cat",
+   "date": "",
+   "description": ""
+>>>>>>> Stashed changes
  }
 ]

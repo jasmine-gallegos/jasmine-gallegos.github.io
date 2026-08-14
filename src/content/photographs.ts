@@ -13,8 +13,10 @@ export default allPhotographsList;
 
 photographsJSON.map( (p) => {
     allPhotographsList.push ({
-        title: p.Title,
-        category: p["Photography Category"],
-        fileName: p["file-dir"]
+        title: p.title,
+        category: p.category,
+        fileName: p["file-dir"],
+        date: p.date,
+        description: p.description
     })
 })
