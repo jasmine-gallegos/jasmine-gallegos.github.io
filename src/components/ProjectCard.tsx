@@ -2,11 +2,8 @@ import { Link } from "react-router-dom";
 import type { Project } from "../content/projects";
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { cld } from "../content/image-cloud";
-import { auto, fill } from "@cloudinary/url-gen/actions/resize";
-import { focusOn } from "@cloudinary/url-gen/qualifiers/autoFocus";
-import { face } from "@cloudinary/url-gen/qualifiers/focusOn";
+import { fill } from "@cloudinary/url-gen/actions/resize";
 import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
-import { north } from "@cloudinary/url-gen/qualifiers/compass";
 
 interface ProjectProps {
     project: Project;
@@ -31,7 +28,6 @@ const ProjectCard = ({ project }: ProjectProps) => {
                         </>
                     : 
                         <>
-                        {/* .resize(fill().aspectRatio("1.8")) */}
                         <AdvancedImage cldImg={
                             cld.image(project.mainItemDir)
                             .resize(fill().aspectRatio("1.8").gravity(autoGravity()))
