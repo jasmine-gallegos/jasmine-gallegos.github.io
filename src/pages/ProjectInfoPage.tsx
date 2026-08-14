@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { getProjectBySlug, type Project } from "../content/projects";
 import { AdvancedImage, AdvancedVideo } from "@cloudinary/react";
 import { cld } from "../content/image-cloud";
 import allPhotographsList from "../content/photographs";
+import { categories } from "./HomePage";
 
 function ProjectInfoPage() {
 
@@ -10,6 +11,10 @@ function ProjectInfoPage() {
     const project = slug ? getProjectBySlug(slug) : undefined;
 
     if (project) {
+
+        const matchedCategory = categories.find((c) => c.genre === project.category);
+        const backIndex = matchedCategory ? matchedCategory.index : 0;
+
         return (
             <>
                 <section className="
@@ -19,8 +24,16 @@ function ProjectInfoPage() {
                     <div className="
                     flex
                     flex-col
-                    m-10
+                    mr-10 ml-10 mb-10
                     ">
+
+                        <Link
+                            to="/"
+                            state={{ categoryIndex: backIndex }}
+                            className="flex text-md mb-4"
+                        >
+                            <h1 className="category-button">← Return to {matchedCategory.label}</h1>
+                        </Link>
 
                         <div className="mb-8">
                             <h1 className="
@@ -158,7 +171,6 @@ const CentralItemSection = ({ project }: { project: Project }) => {
 const LooseItemsSection = ({ project }: { project: Project }) => {
     
     if (project.category === "photography") {
-        //.filter((p) => p.category === project.subFolder)
         return (
             <div className="flex flex-wrap justify-center">
 
@@ -168,8 +180,8 @@ const LooseItemsSection = ({ project }: { project: Project }) => {
                                 w-160
                                 m-4
                             ">
-                        {/* <p>{pt.fileName}</p> */}
                         <AdvancedImage cldImg={cld.image(pt.fileName)} className="" />
+                        <p>{pt.description}</p>
                     </div>
                 ))} 
             </div>

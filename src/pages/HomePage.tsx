@@ -3,13 +3,11 @@ import "../App.css"
 import ProjectCard from "../components/ProjectCard"
 import { type Category } from "../content/projects"
 import allProjectsList from "../content/projects"
+import { useLocation } from "react-router-dom"
 
 
-function HomePage() {
 
-  const [currentCategory, setCurrentCategory] = useState(0);
-
-  const categories: {genre: Category, label: string, index: number}[] = [
+export const categories: {genre: Category, label: string, index: number}[] = [
     { genre: "all", label: "All", index: 0 },
     { genre: "animation", label: "Animation", index: 1 },
     { genre: "2d-motion-graphics", label: "2D Motion Graphics", index: 2 },
@@ -19,6 +17,10 @@ function HomePage() {
     { genre: "photography", label: "Photography", index: 6 },
   ]
 
+function HomePage() {
+
+  const location = useLocation();
+  const [currentCategory, setCurrentCategory] = useState(location.state?.categoryIndex ?? 0);
 
   return (
     <>
@@ -43,7 +45,7 @@ function HomePage() {
           mr-14 ml-14
           ">
             {allProjectsList.filter( (proj) => proj.category === categories[currentCategory].genre || currentCategory === 0 ).map((p, i) => (
-              <ProjectCard project={p} index={i}/>
+              <ProjectCard project={p} index={i} key={i}/>
             ))}
         </div>
 
