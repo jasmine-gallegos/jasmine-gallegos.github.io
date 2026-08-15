@@ -30,9 +30,9 @@ function ProjectInfoPage() {
                         <Link
                             to="/"
                             state={{ categoryIndex: backIndex }}
-                            className="flex text-md mb-4"
+                            className="flex text-2xl mb-4"
                         >
-                            <h1 className="category-button">← Return to {matchedCategory.label}</h1>
+                            <h1 className="p-5">&lt; back to {matchedCategory.label}</h1>
                         </Link>
 
                         <div className="mb-8">
