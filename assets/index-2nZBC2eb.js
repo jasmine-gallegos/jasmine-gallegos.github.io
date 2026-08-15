@@ -102,7 +102,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                     flex
                     flex-col
                     mr-10 ml-10 mb-10
-                    `,children:[(0,H.jsx)(Pn,{to:`/`,state:{categoryIndex:e?e.index:0},className:`flex text-md mb-4`,children:(0,H.jsxs)(`h1`,{className:`category-button`,children:[`← Return to `,e.label]})}),(0,H.jsxs)(`div`,{className:`mb-8`,children:[(0,H.jsx)(`h1`,{className:`
+                    `,children:[(0,H.jsx)(Pn,{to:`/`,state:{categoryIndex:e?e.index:0},className:`flex text-2xl mb-4`,children:(0,H.jsxs)(`h1`,{className:`p-5`,children:[`< back to `,e.label]})}),(0,H.jsxs)(`div`,{className:`mb-8`,children:[(0,H.jsx)(`h1`,{className:`
                             md:text-7xl
                             text-5xl
                             `,children:t.title}),(0,H.jsx)(`p`,{className:`text-5xl`,children:t.date})]}),t.projectHasFocusItem?(0,H.jsx)(H.Fragment,{children:(0,H.jsx)(mc,{project:t})}):(0,H.jsx)(hc,{project:t}),t.description?(0,H.jsxs)(`div`,{className:`
